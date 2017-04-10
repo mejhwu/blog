@@ -1,0 +1,4 @@
+/* 页面控制样式 */
+.container .page-control {margin:20px;}
+.container .page-control .page-jump-btn{height: 24px; width:26px;}
+.container .page-control .page-number-input{width: 30px;margin-left: 10px; height: 20px;}

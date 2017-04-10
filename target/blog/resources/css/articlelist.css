@@ -1,0 +1,24 @@
+
+
+/* 内容样式 */
+.container{width:90%;margin: 0 auto;}
+
+/* 搜索面板样式 */
+.container .search-panel{width: 70%; margin: 0 auto; margin-top: 20px;overflow: hidden;margin-bottom: 20px}
+.container .search-panel .select-type{width:70px;height: 30px;margin-right: 10px; font-size: 16px;}
+.container .search-panel .search-input{width:300px;height: 28px;margin:10px; font-size: 20px;}
+.container .search-panel .search-btn{height: 30px;width: 60px; margin-top: 10px;margin-right: 10px;}
+.container .search-panel span {margin-left: 20px;}
+
+/* 结果表格样式 */
+.container .article-table {border-collapse: collapse; width: 100%;}
+.container .article-table thead {font-size: 20px;}
+.container .article-table tbody {font-size: 16px;}
+.container .article-table td{border:1px solid gray; width: 10%; text-align: center; height: 30px; line-height: 30px;}
+.container .article-table .td-5{width: 5%;}
+.container .article-table .td-35{width: 25%;}
+.container .article-table .td-15{width: 15%;}
+.container .article-table td a {margin: 0 3px;}
+.container .article-table .lightgray-background{background-color: lightgray;}
+
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="cn.mejhwu.dao.ArticleDao">
+	
+	<!-- 查询所有文章 -->
+	<select id="queryArticle" resultType="Article">
+		SELECT a.id, a.title,a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id
+		<if test="article.title != null">
+			AND a.title LIKE '%' #{article.title}
+		</if>
+		<if test="article.catalogId != 0">
+			AND a.catalog_id = #{article.catalogId}
+		</if>
+		<if test="article.createTime != null">
+			AND a.create_time &gt;= #{article.createTime}
+		</if>
+		<if test="article.updateTime != null">
+			AND  a.create_time &lt;= #{article.updateTime}
+		</if>
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	
+	<select id="queryArticleCount" resultType="int">
+		SELECT count(a.id)
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id
+		<if test="article.title != null">
+			AND a.title LIKE '%' #{article.title}
+		</if>
+		<if test="article.catalogId != 0">
+			AND a.catalog_id = #{article.catalogId}
+		</if>
+		<if test="article.createTime != null">
+			AND a.create_time &gt;= #{article.createTime}
+		</if>
+		<if test="article.updateTime != null">
+			AND  a.create_time &lt;= #{article.updateTime}
+		</if>
+	</select>
+	
+	<!-- 根据文章类别查询 -->
+	<select id="queryArticleByCatalog" parameterType="int" resultType="Article">
+		SELECT a.id, a.title,a.content,a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id AND a.catalog_id=#{catalogId}
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	<!-- 根据文章作者查询 -->
+	<select id="queryArticleByAuthor" parameterType="int" resultType="Article">
+		SELECT a.id, a.title,a.content,a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id AND a.author_id=#{authorId}
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	<!-- 根据文章标题查询 -->
+	<select id="queryArticleByTitle" parameterType="java.lang.String" resultType="Article">
+		SELECT a.id, a.title,a.content,a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id AND a.title LIKE '%' #{keyWords} '%';
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	<!-- 根据文章内容查询 -->
+	<select id="queryArticleByContent" parameterType="java.lang.String" resultType="Article">
+		SELECT a.id, a.title,a.content,a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id AND a.content LIKE '%' #{keyWords} '%';
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	<!-- 根据时间范围查询 -->
+	<select id="queryArticleByDate" parameterType="java.util.Date" resultType="Article">
+		SELECT a.id, a.title,a.content,a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id
+			<if test="startDate != null">
+				AND a.create_time &gt;= #{startDate}
+			</if>
+			<if test="endDate != null">
+				AND  a.create_time &lt;= #{endDate}
+			</if>
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+		ORDER BY a.create_time DESC
+	</select>
+	
+	<select id="queryArticleById" resultType="Article">
+		SELECT a.id, a.title,a.edit_content,a.html_content, a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		FROM `article` a JOIN `user` u JOIN  `catalog` ca
+		ON a.author_id = u.id AND a.catalog_id = ca.id AND a.id = #{id}
+	</select>
+	
+	<!-- 插入文章 -->
+	<insert id="insertArticle" parameterType="Article">
+		INSERT INTO `article`(`title`,`edit_content`,`html_content`,`author_id`,`catalog_id`)
+		VALUES (#{title}, #{editContent},#{htmlContent}, #{authorId}, #{catalogId})
+	</insert>
+	
+	<!-- 修改文章 -->
+	<update id="updateArticle" parameterType="Article">
+		UPDATE `article`
+		SET `title`=#{title}, `edit_content`=#{editContent}, `html_content`=#{htmlContent}, `catalog_id`=#{catalogId}
+		WHERE `id`=#{id}
+	</update>
+	
+	<!-- 删除文章 -->
+	<delete id="deleteArticle" parameterType="int">
+		DELETE FROM `article`
+		WHERE `id`=#{id}
+	</delete>
+</mapper>
