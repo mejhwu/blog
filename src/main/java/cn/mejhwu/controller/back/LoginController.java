@@ -37,7 +37,7 @@ public class LoginController {
 	 * 跳转到登录页面
 	 * @return
 	 */
-	@RequestMapping("loginPage")
+	@RequestMapping("/loginPage")
 	public String goLoginPage() {
 		return "back/login";
 	}

@@ -43,10 +43,10 @@ public class UserInterceptor implements HandlerInterceptor {
 					request.setAttribute("password", password);
 					request.getRequestDispatcher("/back/login/login").forward(request,response);
 				} else {
-					response.sendRedirect("/back/login/goLoginPage");
+					response.sendRedirect("/back/login/loginPage");
 				}
 			} else {
-				response.sendRedirect("/back/login/goLoginPage");
+				response.sendRedirect("/back/login/loginPage");
 			}
 		}
 		return true;

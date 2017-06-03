@@ -26,7 +26,7 @@
 					<li role="presentation"><a href="/back/catalog/all">类别管理</a></li>
 					<li role="presentation"><a href="#">用户管理</a></li>
 					<li role="presentation"><a href="/back/comment/list">评论管理</a></li>
-					<li role="presentation"><a href="/back/article/goEdit">编写文章</a></li>
+                    <li role="presentation"><a href="/back/article/edit">编写文章</a></li>
 				</ul>
 			</div>
 			<div>

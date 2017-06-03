@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="525993ff-6a81-4b40-a095-e4a316b89e8a" name="Default" comment="修改restful接口设计">
+    <list default="true" id="525993ff-6a81-4b40-a095-e4a316b89e8a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/BackArticleController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/BackArticleController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/LoginController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/interceptor/UserInterceptor.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/interceptor/UserInterceptor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/BackArticleController.class" afterPath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/BackArticleController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/interceptor/UserInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/cn/mejhwu/interceptor/UserInterceptor.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/BackArticleController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/BackArticleController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleDetail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/catalog.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/catalog.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/comment.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/comment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/edit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/edit.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/replay.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/replay.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/interceptor/UserInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/interceptor/UserInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/articleDetail.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/articleDetail.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/articleList.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/articleList.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/catalog.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/catalog.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/comment.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/comment.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/edit.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/edit.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/replay.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/replay.jsp" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,21 +48,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding>
+                <element signature="e#1031#1032#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articleDetail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleDetail.jsp">
+      <file leaf-file-name="UserInterceptor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/mejhwu/interceptor/UserInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+            <state relative-caret-position="267">
+              <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -160,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/resources/js/back/edit.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/front/articleDetail.jsp" />
         <option value="$PROJECT_DIR$/sql.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/BackArticleController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleDetail.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleList.jsp" />
@@ -168,6 +176,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/comment.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/replay.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/mejhwu/interceptor/UserInterceptor.java" />
       </list>
     </option>
   </component>
@@ -438,6 +448,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mejhwu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mejhwu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interceptor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1034,7 +1074,7 @@
       <workItem from="1492859994611" duration="881000" />
       <workItem from="1493940983376" duration="28122000" />
       <workItem from="1493970651190" duration="844000" />
-      <workItem from="1496498729441" duration="914000" />
+      <workItem from="1496498729441" duration="1086000" />
     </task>
     <task id="LOCAL-00001" summary="用bootstrap重写前段">
       <created>1493971141939</created>
@@ -1043,11 +1083,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493971141939</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改restful接口设计">
+      <created>1496499686297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496499686297</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30761000" />
+    <option name="totallyTimeSpent" value="30933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1505" y="24" width="1301" height="744" extended-state="6" />
@@ -1099,6 +1146,7 @@
     <MESSAGE value="用bootstrap重写前段" />
     <MESSAGE value="修改restful接口设计" />
     <option name="LAST_COMMIT_MESSAGE" value="修改restful接口设计" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1111,14 +1159,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/back/edit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/back/articleDetail.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1357">
@@ -1447,8 +1487,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/mejhwu/interceptor/UserInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
           <folding />
         </state>
       </provider>
