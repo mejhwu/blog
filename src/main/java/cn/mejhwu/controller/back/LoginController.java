@@ -25,7 +25,7 @@ import java.io.IOException;
  */
 
 @Controller
-@RequestMapping("/back/login")
+@RequestMapping("/back/")
 public class LoginController {
 	
 	private final static Logger logger = LoggerFactory.getLogger(LoginController.class);
@@ -37,7 +37,7 @@ public class LoginController {
 	 * 跳转到登录页面
 	 * @return
 	 */
-	@RequestMapping("goLoginPage")
+	@RequestMapping("loginPage")
 	public String goLoginPage() {
 		return "back/login";
 	}

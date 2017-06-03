@@ -43,8 +43,8 @@ public class BackArticleController {
 		return "back/articleList";
 	}
 	
-	@RequestMapping(value = "goEdit", method = RequestMethod.GET)
-	public String goEdit(Model model) {
+	@RequestMapping(value = "/edit", method = RequestMethod.GET)
+	public String edit(Model model) {
 		model.addAttribute("catalogs", catalogService.queryAllCatalog());
 		return "back/edit";
 	}
@@ -61,8 +61,8 @@ public class BackArticleController {
 		return res;
 	}
 	
-	@RequestMapping(value = "goUpdate/{id}", method = RequestMethod.GET)
-	public String goUpdate(@PathVariable("id") int id, Model model) {
+	@RequestMapping(value = "edit/{id}", method = RequestMethod.GET)
+	public String edit(@PathVariable("id") int id, Model model) {
 		model.addAttribute("catalogs", catalogService.queryAllCatalog());
 		model.addAttribute("article", articleService.queryArticleById(id));
 		return "back/edit";
