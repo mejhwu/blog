@@ -25,7 +25,7 @@
 	<mvc:interceptors>
 		<mvc:interceptor>
 			<mvc:mapping path="/back/**"/>
-			<mvc:exclude-mapping path="/back/login/**"/>
+			<mvc:exclude-mapping path="/back/login*"/>
 			<bean class="cn.mejhwu.interceptor.UserInterceptor"/>
 		</mvc:interceptor>
 	</mvc:interceptors>

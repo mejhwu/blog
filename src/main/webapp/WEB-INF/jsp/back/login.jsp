@@ -13,7 +13,7 @@
 <body>
 <div class="wrap">
 	<div class="container">
-		<form method="post" action="/back/login/login" class="login-panel form-horizontal">
+		<form method="post" action="/back/login" class="login-panel form-horizontal">
             <label class="text-warning">${message}</label>
 			<div class="form-group">
 				<label for="user-name" class="sr-only">用户名</label>
