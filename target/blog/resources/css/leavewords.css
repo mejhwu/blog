@@ -1,5 +1,0 @@
-/* 结果表格样式 */
-.container {width: 90%; margin: 0 auto; overflow: hidden; margin-top: 40px}
-.container .leavewords-table {border-collapse: collapse; width: 100%;}
-.container .leavewords-table td{border:1px solid gray; width: 20%; text-align: center;}
-.container .leavewords-table a {display: block; width: 40px; text-align: center;}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+		
+<mapper namespace="cn.mejhwu.dao.CommentDao">
+	
+	<!-- 插入评论 -->
+	<insert id="insertComment">
+		INSERT INTO `article_comment`(`name`, `email`, `edit_content`, `html_content`, `article_id`, `commented`)
+		VALUES (#{name}, #{email}, #{editContent}, #{htmlContent}, #{articleId}, 1)
+	</insert>
+	
+	<!-- 查询评论 -->
+	<select id="queryComment" resultType="Comment">
+		SELECT `id`, `name`, `email`, `edit_content`, `html_content`, `article_id`, `commented`, `create_time`, `update_time`
+		FROM `article_comment`
+		<where>
+			<if test="articleId > 0">
+				`article_id` = #{articleId}
+			</if>
+		</where>
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	<!-- 根据文章ID查询评论数量 -->
+	<select id="queryCommentCount" resultType="int">
+		SELECT count(`id`)
+		FROM `article_comment`
+		<where>
+			<if test="articleId > 0">
+				AND `article_id` = #{articleId}
+			</if>
+			<if test="commented == 1">
+				AND `commented` = 1
+			</if>
+			<if test="commented == 2">
+				AND `commented` = 2
+			</if>
+		</where>
+	</select>
+	
+	
+	<!-- 根据文章ID查询评论 -->
+	<select id="queryCommentByArticleId" resultType="Comment">
+		SELECT `id`, `name`, `email`, `edit_content`, `html_content`, `article_id`, `commented`, `create_time`, `update_time`
+		FROM `article_comment`
+		WHERE `article_id` = #{articleId}
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	<!-- 根据文章ID查询评论数量 -->
+	<select id="queryCommentByArticleIdCount" resultType="int">
+		SELECT count(`id`)
+		FROM `article_comment`
+		WHERE `article_id` = #{articleId}
+	</select>
+	
+	<!-- 查询所有评论 -->
+	<select id="queryAllComment" resultType="Comment">
+		SELECT `id`, `name`, `email`, `edit_content`, `html_content`, `article_id`, `commented`, `create_time`, `update_time`
+		FROM `article_comment`
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	
+	<!-- 查询所有评论数量 -->
+	<select id="queryAllCommentCount" resultType="int">
+		SELECT count(`id`)
+		FROM `article_comment`
+	</select>
+	
+	<!-- 查询所有未评论评论 -->
+	<select id="queryCommentNotCommented" resultType="Comment">
+		SELECT `id`, `name`, `email`, `edit_content`, `html_content`, `article_id`, `commented`, `create_time`, `update_time`
+		FROM `article_comment`
+		WHERE `commented` = 1;
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	
+	<!-- 查询所有未回复评论数量 -->
+	<select id="queryCommentNotCommentedCount" resultType="int">
+		SELECT count(`id`)
+		FROM `article_comment`
+		WHERE `commented` = 1;
+	</select>
+	
+	<!-- 通过文章ID查询所有未回复评论 -->
+	<select id="queryNotCommentedByArticleId" resultType="Comment">
+		SELECT `id`, `name`, `email`, `edit_content`, `html_content`, `article_id`, `commented`, `create_time`, `update_time`
+		FROM `article_comment`
+		WHERE `commented` = 1 AND `article_id` = #{articleId};
+		<if test="limit > 0">
+			LIMIT #{start}, #{limit}
+		</if>
+	</select>
+	
+	
+	<!-- 通过文章ID查询所有未回复评论数量 -->
+	<select id="queryNotCommentedByArticleIdCount" resultType="int">
+		SELECT count(`id`)
+		FROM `article_comment`
+		WHERE `commented` = 1 AND `article_id` = #{articleId};
+	</select>
+	
+	<!-- 通过id查询评论 -->
+	<select id="queryCommentById" resultType="Comment">
+		SELECT `id`, `name`, `email`, `edit_content`, `html_content`, `article_id`, `commented`, `create_time`, `update_time`
+		FROM `article_comment`
+		WHERE `id` = #{id}
+	</select>
+</mapper>

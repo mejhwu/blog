@@ -7,11 +7,11 @@
 	
 	<!-- 查询所有文章 -->
 	<select id="queryArticle" resultType="Article">
-		SELECT a.id, a.title,a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
+		SELECT a.id, a.title,a.html_content, a.author_id,u.name author_name, a.catalog_id, ca.catalog, a.create_time,a.update_time
 		FROM `article` a JOIN `user` u JOIN  `catalog` ca
 		ON a.author_id = u.id AND a.catalog_id = ca.id
 		<if test="article.title != null">
-			AND a.title LIKE '%' #{article.title}
+			AND a.title LIKE '%' #{article.title} '%'
 		</if>
 		<if test="article.catalogId != 0">
 			AND a.catalog_id = #{article.catalogId}

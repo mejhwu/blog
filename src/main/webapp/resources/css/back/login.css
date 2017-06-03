@@ -1,0 +1,9 @@
+*{margin:0;padding:0;margin:0; padding:0;font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif;"宋体";}
+
+/*整个页面背景*/
+.wrap{width:100%;height:800px;background:url(/resources/images/login-background.jpg) no-repeat;background-size:cover;}
+
+/*登录panel*/
+
+.wrap .container .login-panel{width:300px;margin:100px auto;z-index: 10;}
+

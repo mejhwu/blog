@@ -1,0 +1,4 @@
+.container {width: 80%; margin: 30px auto;}
+.container span {font-size:18px; margin-right: 10px;}
+.container .first {color: red; font-size: 20px;}
+.container #replay-btn {height: 40px; width: 100px;}

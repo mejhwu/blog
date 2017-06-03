@@ -72,4 +72,15 @@ public class Pager<T> {
 		}
 		return num;
 	}
+
+	@Override
+	public String toString() {
+		return "Pager{" +
+				"pageSize=" + pageSize +
+				", currentPage=" + currentPage +
+				", totalRecord=" + totalRecord +
+				", totalPage=" + totalPage +
+				", data=" + data +
+				"}\n";
+	}
 }

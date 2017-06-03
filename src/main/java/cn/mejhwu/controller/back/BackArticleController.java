@@ -40,7 +40,7 @@ public class BackArticleController {
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public String articleList(Model model){
 		model.addAttribute("catalogs", catalogService.queryAllCatalog());
-		return "back/articlelist";
+		return "back/articleList";
 	}
 	
 	@RequestMapping(value = "goEdit", method = RequestMethod.GET)
@@ -76,6 +76,15 @@ public class BackArticleController {
 		article.setId(id);
 		return articleService.updateArticle(article);
 	}
+	
+	
+	@RequestMapping(value = "/detail/{id}",
+			method = RequestMethod.GET)
+	public String deatilArticle(@PathVariable("id") int id, Model model) {
+		model.addAttribute("article", articleService.queryArticleById(id));
+		return "back/articleDetail";
+	}
+	
 	
 	@RequestMapping(value = "/delete/{id}",
 					method = RequestMethod.POST,
