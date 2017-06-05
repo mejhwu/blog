@@ -1,9 +1,7 @@
 package cn.mejhwu.controller.front;
 
-import cn.mejhwu.beans.Comment;
 import cn.mejhwu.service.ArticleService;
 import cn.mejhwu.service.CatalogService;
-import cn.mejhwu.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,22 +23,18 @@ public class ArticleController {
     @Autowired
     CatalogService catalogService;
 
-    @Autowired
-    CommentService commentService;
-    
-    @RequestMapping(value = "/index",
+
+    @RequestMapping(value = "/",
                     method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("catalogs", catalogService.queryAllCatalog());
         return "front/index";
     }
 
-    @RequestMapping(value = "/article/detail/{id}",
+    @RequestMapping(value = "/article/{id}",
             method = RequestMethod.GET)
     public String detailArticle(@PathVariable("id") int id, Model model) {
         model.addAttribute("article", articleService.queryArticleById(id));
-		List<Comment> list = commentService.queryCommentByArticleId(id, 0, 0);
-        model.addAttribute("comments", list);
-        return "front/articleDetail";
+        return "front/article";
     }
 }

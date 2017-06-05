@@ -27,11 +27,7 @@
         .catalog-time span {
             margin-right: 10px;
         }
-        
-        .wrap {
-            width:80%;
-            margin: 0 auto;
-        }
+
     </style>
 </head>
 <body>

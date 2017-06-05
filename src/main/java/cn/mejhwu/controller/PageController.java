@@ -1,10 +1,7 @@
 package cn.mejhwu.controller;
 
 import cn.mejhwu.beans.Article;
-import cn.mejhwu.beans.Comment;
 import cn.mejhwu.dto.Pager;
-import cn.mejhwu.service.ArticleService;
-import cn.mejhwu.service.CommentService;
 import cn.mejhwu.service.PageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,7 +11,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.view.InternalResourceView;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
@@ -67,7 +63,7 @@ public class PageController {
 	 * @param pageNum
 	 * @param request
 	 * @return
-	 */
+	 *//*
 	@RequestMapping(value = "/{pageNum}/comment",
 			method = RequestMethod.GET,
 			produces = {"application/json;charset=UTF-8"})
@@ -85,5 +81,5 @@ public class PageController {
 			id = Integer.parseInt(articleId);
 		}
 		return pageService.getCommentPage(pageNum, commented, id);
-	}
+	}*/
 }

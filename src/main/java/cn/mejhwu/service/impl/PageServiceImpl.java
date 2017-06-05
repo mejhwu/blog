@@ -1,10 +1,8 @@
 package cn.mejhwu.service.impl;
 
 import cn.mejhwu.beans.Article;
-import cn.mejhwu.beans.Comment;
 import cn.mejhwu.dto.Pager;
 import cn.mejhwu.service.ArticleService;
-import cn.mejhwu.service.CommentService;
 import cn.mejhwu.service.PageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,9 +24,7 @@ public class PageServiceImpl implements PageService {
 	@Autowired
 	ArticleService articleService;
 	
-	@Autowired
-	CommentService commentService;
-	
+
 	public Pager<Article> getArticlePage(int pageNum, Article article) {
 		Pager<Article> pager = new Pager<Article>();
 		pager.setCurrentPage(pageNum);
@@ -44,7 +40,7 @@ public class PageServiceImpl implements PageService {
 		logger.info(pager.toString());
 		return pager;
 	}
-	
+	/*
 	public Pager<Comment> getCommentPage(int pageNum, int commented, int articleId) {
 		
 		Pager<Comment> pager = new Pager<Comment>();
@@ -61,5 +57,5 @@ public class PageServiceImpl implements PageService {
 
 		logger.info(pager.toString());
 		return pager;
-	}
+	}*/
 }

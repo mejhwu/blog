@@ -10,12 +10,6 @@
     <title>主页</title>
     <link type="text/css" rel="stylesheet" href="/resources/css/front/index.css">
     <link type="text/css" rel="stylesheet" href="/resources/css/bootstrap.min.css">
-    <style>
-        .wrap {
-            width: 80%;
-            margin: 0 auto;
-        }
-    </style>
 </head>
 <body>
 <div class="container">

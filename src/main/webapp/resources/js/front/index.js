@@ -59,7 +59,7 @@ function bindArticle (list) {
     $.each(list, function (i, article) {
         html += '<div class="content-item">';
         html += '<h4>';
-        html += '<a href="/article/detail/' + article.id + '">' + article.title.replace($('#search-content').val(), '<span class="search-key-words">' + $('#search-content').val() + '</span>') + '</a><br>';
+        html += '<a href="/article/' + article.id + '">' + article.title.replace($('#search-content').val(), '<span class="search-key-words">' + $('#search-content').val() + '</span>') + '</a><br>';
         html += '<small><span class="catalog-time">类别:' + article.catalog + '</span>';
         html += '<span class="catalog-time">日期:' + new Date(article.createTime).format('yyyy-MM-dd HH:mm:ss') + '</span>';
         html += '</small></h4><p class="content-validity-p">';
