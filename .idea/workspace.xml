@@ -2,48 +2,582 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="525993ff-6a81-4b40-a095-e4a316b89e8a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/bo/EntityType.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/beans/Comment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/back/BackCommentController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/front/CommentController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/dao/CommentDao.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/service/CommentService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/service/impl/CommentServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/comment-mapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/welcome.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/cn/mejhwu/dao/ArticleDaoTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/cn/mejhwu/dao/CatalogDaoTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/cn/mejhwu/dao/UserDaoTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/beans/Article.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/beans/Catalog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/beans/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/beans/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/PageController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/BackArticleController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/BackCommentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/CatalogController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/FileController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/back/LoginController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/front/ArticleController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/front/CommentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/dao/ArticleDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/dao/CatalogDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/dao/CommentDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/dto/Pager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/interceptor/UserInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/ArticleService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/CatalogService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/CommentService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/PageService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/impl/ArticleServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/impl/CatalogServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/impl/CommentServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/impl/PageServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/mapper/article-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/mapper/catalog-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/mapper/comment-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/mapper/user-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/spring/spring-dao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/spring/spring-service.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/spring/spring-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/articleDetail.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/articleList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/catalog.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/comment.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/edit.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/login.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/pageControl.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/back/replay.jsp" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/front/articleDetail.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/front/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/ao-encoding-1.5.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/ao-encoding-servlet-1.3.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/ao-io-buffer-2.0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/ao-servlet-filter-1.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/ao-taglib-2.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/aocode-public-1.8.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/c3p0-0.9.5.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/druid-1.0.29.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/jackson-annotations-2.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/jackson-core-2.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/jackson-databind-2.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/logback-classic-1.2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/logback-core-1.2.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/mchange-commons-java-0.2.11.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/mybatis-3.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/mysql-connector-java-6.0.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/slf4j-api-1.7.21.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-jdbc-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-test-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/standard-1.1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/lib/taglibs-standard-impl-1.2.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/back/article.detail.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/back/catalog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/back/edit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/back/login.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/back/replay.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/front/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/css/page.control.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/Gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/css/editormd.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/css/editormd.logo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/css/editormd.logo.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/css/editormd.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/css/editormd.preview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/css/editormd.preview.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/editormd.amd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/editormd.amd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/editormd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/editormd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/editormd-logo.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/editormd-logo.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/editormd-logo.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/editormd-logo.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/loading@2x.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/loading@3x.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-favicon-16x16.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-favicon-24x24.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-favicon-32x32.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-favicon-48x48.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-favicon-64x64.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-114x114.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-120x120.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-180x180.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-240x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-24x24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-320x320.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-48x48.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-57x57.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-64x64.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-72x72.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/editormd-logo-96x96.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/images/logos/vi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/languages/en.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/languages/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/comment/comment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/comment/continuecomment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/dialog/dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/dialog/dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/display/fullscreen.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/display/fullscreen.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/display/panel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/display/placeholder.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/display/rulers.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/edit/closebrackets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/edit/closetag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/edit/continuelist.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/edit/matchbrackets.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/edit/matchtags.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/edit/trailingspace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/brace-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/comment-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/foldcode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/foldgutter.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/foldgutter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/indent-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/markdown-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/fold/xml-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/anyword-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/css-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/html-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/javascript-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/show-hint.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/show-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/sql-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/hint/xml-hint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/lint/coffeescript-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/lint/css-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/lint/javascript-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/lint/json-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/lint/lint.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/lint/lint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/lint/yaml-lint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/merge/merge.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/merge/merge.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/mode/loadmode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/mode/multiplex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/mode/multiplex_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/mode/overlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/mode/simple.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/runmode/colorize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/runmode/runmode-standalone.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/runmode/runmode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/runmode/runmode.node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/scroll/annotatescrollbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/scroll/scrollpastend.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/scroll/simplescrollbars.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/scroll/simplescrollbars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/search/match-highlighter.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/search/matchesonscrollbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/search/matchesonscrollbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/search/search.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/search/searchcursor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/selection/active-line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/selection/mark-selection.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/selection/selection-pointer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/tern/tern.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/tern/tern.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/tern/worker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addon/wrap/hardwrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/addons.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/codemirror.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/codemirror.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/lib/codemirror.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/lib/codemirror.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/apl/apl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/apl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/asterisk/asterisk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/asterisk/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/clike/clike.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/clike/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/clike/scala.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/clojure/clojure.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/clojure/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/cobol/cobol.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/cobol/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/coffeescript/coffeescript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/coffeescript/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/commonlisp/commonlisp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/commonlisp/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/css/css.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/css/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/css/less.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/css/less_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/css/scss.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/css/scss_test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/css/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/cypher/cypher.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/cypher/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/d/d.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/d/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dart/dart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dart/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/diff/diff.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/diff/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/django/django.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/django/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dockerfile/dockerfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dockerfile/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dtd/dtd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dtd/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dylan/dylan.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/dylan/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ebnf/ebnf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ebnf/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ecl/ecl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ecl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/eiffel/eiffel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/eiffel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/erlang/erlang.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/erlang/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/forth/forth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/forth/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/fortran/fortran.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/fortran/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/gas/gas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/gas/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/gfm/gfm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/gfm/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/gfm/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/gherkin/gherkin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/gherkin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/go/go.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/go/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/groovy/groovy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/groovy/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/haml/haml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/haml/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/haml/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/haskell/haskell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/haskell/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/haxe/haxe.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/haxe/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/htmlembedded/htmlembedded.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/htmlembedded/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/htmlmixed/htmlmixed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/htmlmixed/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/http/http.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/http/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/idl/idl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/idl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/jade/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/jade/jade.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/javascript/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/javascript/javascript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/javascript/json-ld.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/javascript/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/javascript/typescript.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/jinja2/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/jinja2/jinja2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/julia/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/julia/julia.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/kotlin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/kotlin/kotlin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/livescript/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/livescript/livescript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/lua/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/lua/lua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/markdown/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/markdown/markdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/markdown/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/meta.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/mirc/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/mirc/mirc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/mllike/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/mllike/mllike.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/modelica/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/modelica/modelica.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/nginx/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/nginx/nginx.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ntriples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ntriples/ntriples.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/octave/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/octave/octave.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/pascal/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/pascal/pascal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/pegjs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/pegjs/pegjs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/perl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/perl/perl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/php/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/php/php.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/php/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/pig/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/pig/pig.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/properties/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/properties/properties.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/puppet/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/puppet/puppet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/python/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/python/python.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/q/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/q/q.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/r/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/r/r.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/rpm/changes/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/rpm/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/rpm/rpm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/rst/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/rst/rst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ruby/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ruby/ruby.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/ruby/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/rust/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/rust/rust.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sass/sass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/scheme/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/scheme/scheme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/shell/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/shell/shell.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/shell/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sieve/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sieve/sieve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/slim/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/slim/slim.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/slim/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/smalltalk/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/smalltalk/smalltalk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/smarty/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/smarty/smarty.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/smartymixed/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/smartymixed/smartymixed.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/solr/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/solr/solr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/soy/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/soy/soy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sparql/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sparql/sparql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/spreadsheet/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/spreadsheet/spreadsheet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sql/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/sql/sql.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/stex/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/stex/stex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/stex/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/stylus/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/stylus/stylus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tcl/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tcl/tcl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/textile/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/textile/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/textile/textile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tiddlywiki/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tiddlywiki/tiddlywiki.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tiddlywiki/tiddlywiki.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tiki/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tiki/tiki.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tiki/tiki.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/toml/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/toml/toml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tornado/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/tornado/tornado.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/turtle/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/turtle/turtle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/vb/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/vb/vb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/vbscript/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/vbscript/vbscript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/velocity/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/velocity/velocity.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/verilog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/verilog/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/verilog/verilog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/xml/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/xml/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/xml/xml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/xquery/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/xquery/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/xquery/xquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/yaml/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/yaml/yaml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/z80/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/mode/z80/z80.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/modes.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/3024-day.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/3024-night.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/ambiance-mobile.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/ambiance.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/base16-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/base16-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/blackboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/cobalt.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/colorforth.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/eclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/elegant.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/erlang-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/lesser-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/mbo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/mdn-like.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/midnight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/monokai.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/neat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/neo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/night.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/paraiso-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/paraiso-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/pastel-on-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/rubyblue.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/solarized.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/the-matrix.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/tomorrow-night-bright.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/tomorrow-night-eighties.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/twilight.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/vibrant-ink.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/xq-dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/xq-light.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/codemirror/theme/zenburn.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/flowchart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/jquery.flowchart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/marked.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/prettify.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/raphael.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/sequence-diagram.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/lib/underscore.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/code-block-dialog/code-block-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/emoji-dialog/emoji-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/emoji-dialog/emoji.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/goto-line-dialog/goto-line-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/help-dialog/help-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/help-dialog/help.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/html-entities-dialog/html-entities-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/html-entities-dialog/html-entities.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/image-dialog/image-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/link-dialog/link-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/plugin-template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/preformatted-text-dialog/preformatted-text-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/reference-link-dialog/reference-link-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/table-dialog/table-dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/plugins/test-plugin/test-plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.codemirror.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.dialog.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.logo.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.menu.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.preview.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.preview.themes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.tab.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/editormd.themes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/github-markdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/lib/prefixes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/lib/variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/scss/prettify.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/editor/src/editormd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/images/login-background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/images/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/back/article.list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/back/catalog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/back/comment.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/back/edit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/back/editormd.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/back/login.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/back/replay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/date.format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/front/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/js/page.control.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/1491897512134btn02.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/1491897606801graybg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/1491897775816btn06.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/1491897812121btn09.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/1491898758391btn05.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/1491899051153btn01.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/btn05.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/resources/upload/btn10.gif" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/target/blog/welcome.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/PageController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/PageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/front/ArticleController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/controller/front/ArticleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/PageService.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/PageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/impl/PageServiceImpl.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/cn/mejhwu/service/impl/PageServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/PageController.class" afterPath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/PageController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/front/ArticleController.class" afterPath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/front/ArticleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/PageService.class" afterPath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/PageService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/impl/PageServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/impl/PageServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/blog_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/blog_war_exploded.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/beans/Article.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/beans/Catalog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/beans/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/beans/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/PageController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/BackArticleController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/BackCommentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/CatalogController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/FileController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/back/LoginController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/front/ArticleController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/controller/front/CommentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/dao/ArticleDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/dao/CatalogDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/dao/CommentDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/dao/UserDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/dto/Pager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/interceptor/UserInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/ArticleService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/CatalogService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/CommentService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/PageService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/impl/ArticleServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/impl/CatalogServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/impl/CommentServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/impl/PageServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/cn/mejhwu/service/impl/UserServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/logback.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/article-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/catalog-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/comment-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/user-mapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/spring-service.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/spring/spring-web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/cn/mejhwu/dao/ArticleDaoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/cn/mejhwu/dao/CatalogDaoTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/cn/mejhwu/dao/UserDaoTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.iml" afterPath="$PROJECT_DIR$/blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql.sql" afterPath="$PROJECT_DIR$/sql.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/PageController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/PageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/front/ArticleController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/controller/front/ArticleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/service/PageService.java" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/service/PageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/cn/mejhwu/service/impl/PageServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/cn/mejhwu/service/impl/PageServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/front/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/front/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/front/index.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/front/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/blog/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/spring/spring-dao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/front/index.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/jsp/front/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/resources/js/front/index.js" afterPath="$PROJECT_DIR$/target/blog/resources/js/front/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/front/articleDetail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/front/article.jsp" />
     </list>
     <ignored path="blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -249,87 +783,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1326,7 +1788,7 @@
       <workItem from="1493940983376" duration="28122000" />
       <workItem from="1493970651190" duration="844000" />
       <workItem from="1496498729441" duration="1739000" />
-      <workItem from="1496676265193" duration="5226000" />
+      <workItem from="1496676265193" duration="5448000" />
     </task>
     <task id="LOCAL-00001" summary="用bootstrap重写前段">
       <created>1493971141939</created>
@@ -1342,15 +1804,22 @@
       <option name="project" value="LOCAL" />
       <updated>1496499686297</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="修改restful接口设计">
+      <created>1496683963571</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1496683963571</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36812000" />
+    <option name="totallyTimeSpent" value="37034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1366,7 +1835,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1769,8 +2238,8 @@
           <folding>
             <element signature="e#674#685#0" expanded="true" />
             <element signature="e#717#725#0" expanded="true" />
-            <element signature="e#762#771#0" expanded="true" />
-            <element signature="e#808#821#0" expanded="true" />
+            <element signature="e#768#777#0" expanded="true" />
+            <element signature="e#814#827#0" expanded="true" />
           </folding>
         </state>
       </provider>
